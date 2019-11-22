@@ -1,0 +1,25 @@
+.tabs{
+    margin: 2px;
+    background: transparent;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    border: hidden;
+    z-index: 10;
+}
+.tabs:hover{
+    background: #166fe4c0;
+}
+
+.tabs-container{
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #1466d14f;
+    position: relative;
+}
+
+#content{
+    position: relative;
+    z-index: 10;
+}

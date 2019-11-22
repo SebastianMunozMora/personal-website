@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProfileCard.css'
+import './MyProjects.css'
 class ProfileCard extends React.Component {
     render(){
         return(
@@ -9,8 +9,8 @@ class ProfileCard extends React.Component {
                 <p className="about-p">
                     
                     I am passionate about coding and music. I started programming algorithms for audio back in college when I was studying Audio Engineering, 
-                    later I got interested in Web Development, so I took a Fullstack  course in Bogota Bootcamp.
-
+                    later I got interested in Web Development, so I took course in Bogota Bootcamp.
+                        
                 </p>
             </div>
         )
