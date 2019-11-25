@@ -6,10 +6,33 @@ import AudioWave from './AudioWave.js'
 import TabBar from './TabBar.js'
 import ContactMe from './ContactMe.js'
 import MySkills from './MySkills.js'
+import AudioEngineering from './AudioEngineering.js'
+
 class App extends React.Component {
   constructor(props){
     super(props)
     
+    this.audio = [
+      {
+        name: "Anechoic Chamber",
+        imgs: [
+            './an1.jpg',
+            './an2.jpg',
+            './an3.jpg'
+          ],
+          desc: "Created as a class project, it was built for testing small, high frequency range audio speakers or wave guides, it works for 1kHz and above. It's equipped with an XLR input, microphone base, speaker base, and a 360° rotation lever for the speaker, built with Black theater, 10 cm Wedges and MDF",
+        },
+        {
+          name: "Midi Controller",
+          imgs:[
+            "./mid1.png",
+            "./mid2.png",
+            "./mid3.png"
+          ],
+          desc: "A tool built in Android Studio in Java for users to control their MIDI devices over the usb with their smartphone"
+        },
+        
+      ]
     
     this.items = [{
                     name: "About", 
@@ -25,7 +48,7 @@ class App extends React.Component {
                   },
                   {
                     name: "Audio Engineering", 
-                    content: <p>My Data</p>
+                    content: <AudioEngineering items={this.audio} />
                   },
                   {
                     name: "Hobbies", 
