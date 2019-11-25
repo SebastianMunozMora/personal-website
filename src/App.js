@@ -11,7 +11,34 @@ import AudioEngineering from './AudioEngineering.js'
 class App extends React.Component {
   constructor(props){
     super(props)
-    
+    this.projects =[
+      {
+        name:"Audio Speaker design",
+        imgs:[
+          './audio.png'
+        ],
+        desc:'Final class project during my education in Bogota Bootcamp, I\'\ts a website built for the user to be able to design their speaker system choosing casings, and drivers with color variations, the technique used to change the colors can be used for shirt or bags design',
+        link:'https://sebastianmunozmora.github.io/AudioShopFront/'
+      },
+      {
+        name:"Astronomy Picture of the Day Android Front End",
+        imgs:[
+          './astro1.png',
+          './astro2.png'
+        ],
+        desc:'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
+        link:''
+      },
+      {
+        name:"Music Networking",
+        imgs:[
+          './astro1.png',
+          './astro2.png'
+        ],
+        desc:'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
+        link:''
+      },
+    ]
     this.audio = [
       {
         name: "Anechoic Chamber",
@@ -40,7 +67,7 @@ class App extends React.Component {
                   }, 
                   {
                     name: "Web Projects", 
-                    content: <p>My Projects</p>
+                    content: <AudioEngineering items={this.projects}
                   },
                   {
                     name: "Skills", 
@@ -49,10 +76,6 @@ class App extends React.Component {
                   {
                     name: "Audio Engineering", 
                     content: <AudioEngineering items={this.audio} />
-                  },
-                  {
-                    name: "Hobbies", 
-                    content: <p>My Hobbies</p>
                   },
                   {
                     name: "Contact Me", 
