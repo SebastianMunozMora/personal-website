@@ -67,7 +67,7 @@ class App extends React.Component {
                   }, 
                   {
                     name: "Web Projects", 
-                    content: <AudioEngineering items={this.projects}
+                    content: <AudioEngineering items={this.projects} />
                   },
                   {
                     name: "Skills", 
@@ -80,7 +80,7 @@ class App extends React.Component {
                   {
                     name: "Contact Me", 
                     content: <ContactMe />
-                  },
+                  }
                 ]
   }
   render (){
