@@ -17,9 +17,29 @@
     margin-right: 50px;
     background: #1466d14f;
     position: relative;
+    display: flex;
+    list-style-type: none;
 }
 
 #content{
     position: relative;
     z-index: 10;
+}
+
+.burger_line {
+    background: white;
+    height: 2px;
+    width: 30px;
+    justify-content: space-around;
+}
+
+.burgerMenu {
+    height: 32px;
+    border  : none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.burgerMenu:focus {
+    outline: none;
 }
