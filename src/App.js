@@ -11,6 +11,7 @@ import AudioEngineering from './Components/AudioEngineering.js'
 class App extends React.Component {
   constructor(props) {
     super(props)
+
     this.projects = [
       {
         name: "Audio Speaker design",
@@ -39,6 +40,7 @@ class App extends React.Component {
         link: ''
       },
     ]
+    
     this.audio = [
       {
         name: "Anechoic Chamber",
@@ -89,8 +91,7 @@ class App extends React.Component {
         <header className="App-header">
           <h1>Sebastián Muñoz Mora</h1>
           <TabBar items={this.items} />
-
-
+          
         </header>
       </div>
     )
