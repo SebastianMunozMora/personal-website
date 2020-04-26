@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ProfileCard from './ProfileCard.js'
-import AudioWave from './AudioWave.js'
-import TabBar from './TabBar.js'
-import ContactMe from './ContactMe.js'
-import MySkills from './MySkills.js'
-import AudioEngineering from './AudioEngineering.js'
+import ProfileCard from './Components/ProfileCard.js'
+import AudioWave from './Components/AudioWave.js'
+import TabBar from './Components/TabBar.js'
+import ContactMe from './Components/ContactMe.js'
+import MySkills from './Components/MySkills.js'
+import AudioEngineering from './Components/AudioEngineering.js'
 
 class App extends React.Component {
   constructor(props){
