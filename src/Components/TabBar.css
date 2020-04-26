@@ -7,18 +7,21 @@
     padding-bottom: 2px;
     border: hidden;
     z-index: 10;
+    max-width: 200px;
+    box-sizing: border-box;
 }
 .tabs:hover{
     background: #166fe4c0;
 }
 
 .tabs-container{
-    margin-left: 50px;
-    margin-right: 50px;
+    
     background: #1466d14f;
     position: relative;
     display: flex;
     list-style-type: none;
+    max-width: 1000px;
+    justify-content: space-evenly;
 }
 
 #content{
@@ -27,7 +30,9 @@
 }
 
 .burgerMenu {
+    display: none;
     height: 32px;
+    width: 10%;
     border: none;
     background: transparent;
     box-sizing: border-box;
@@ -44,4 +49,12 @@
     background: white;
     height: 2px;
     width: 30px;
+}
+
+@media (max-width: 768px) {
+    .tabs-container, .element-wrapper{
+        display: block;
+        color: red;
+        background: red;
+    }
 }

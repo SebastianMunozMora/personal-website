@@ -4,5 +4,8 @@
 }
 .graph{
     position: absolute;
+    max-width: 500px;
+    height: auto;
     z-index: 0;
+    width: 100%;
 }

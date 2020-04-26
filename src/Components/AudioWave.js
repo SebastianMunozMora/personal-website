@@ -36,7 +36,7 @@ class AudioWave extends React.Component{
     render(){
         return(
             <div className="graph">
-                <XYPlot height={930} width={1900} className="xy" >
+                <XYPlot height={100} width={1000} className="xy" >
                     <LineSeries data={this.makeChart(this.points,this.makeWave(this.Amplitude,this.f,0))} color={this.props.color} style={{strokeWidth: 0.2}}/>
                     <LineSeries data={this.makeChart(this.points,this.makeWave(this.Amplitude/2,this.f,0))} color={this.props.color} style={{strokeWidth: 0.2}}/>
                     <XAxis style={this.gridStyle} />

@@ -5,32 +5,37 @@ class TabBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            currentItem: this.props.items[2]
+            currentItem: this.props.items[2],
+            burgerStatus: true
         }
     }
 
     render() {
         return (
             <div>
+                <button class="burgerMenu" onClick={() => {
+                    this.state.burgerStatus ? this.setState({ burgerStatus: false }) : this.setState({ burgerStatus: true })
+                }
+
+                }>
+                    <div className="burger_line"></div>
+                    <div className="burger_line"></div>
+                    <div className="burger_line"></div>
+                </button>
                 <ul className="tabs-container">
-                    <div class="container">
-                        <button class="burgerMenu">
-                            <div className="burger_line"></div>
-                            <div className="burger_line"></div>
-                            <div className="burger_line"></div>
-                        </button>
-                    </div>
                     {this.props.items.map((item) => {
-                        return (
-                            <li>
-                                <button className="tabs" onClick={() => {
-                                    this.setState({ currentItem: item })
-                                }}>
-                                    <h2>{item.name}</h2>
-                                    <hr></hr>
-                                </button>
-                            </li>
-                        )
+                        if (this.state.burgerStatus) {
+                            return (
+                                <li>
+                                    <button className="tabs" onClick={() => {
+                                        this.setState({ currentItem: item })
+                                    }}>
+                                        <h2>{item.name}</h2>
+                                        <hr></hr>
+                                    </button>
+                                </li>
+                            )
+                        }
                     })}
                 </ul>
                 <div id="content">
