@@ -20,5 +20,10 @@ td{
     font-size: large;
 }
 .skills{
-    
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+td {
+    padding-top: 10ppx;
 }
