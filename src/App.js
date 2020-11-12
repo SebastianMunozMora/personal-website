@@ -80,7 +80,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <AudioWave Amplitude = {1} f = {2} color="#acaaaa85" />
           <h1>Sebastián Muñoz Mora</h1>
           <TabBar items={this.items} />
           
