@@ -40,6 +40,7 @@ class AudioEngineering extends React.Component {
                         </Slider>
                     </div>
                     <p className="audio-p">{this.state.currentItem.desc}</p>
+                    <a className="audio-link" href={this.state.currentItem.link}>{this.state.currentItem.name}</a>
                 </div>
             </div>
         )

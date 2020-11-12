@@ -21,8 +21,8 @@ class TabBar extends React.Component {
                                     <button className="tabs" onClick={() => {
                                         this.setState({ currentItem: item })
                                     }}>
-                                        <h2>{item.name}</h2>
-                                        <hr></hr>
+                                    <h2>{item.name}</h2>
+                                    <hr></hr>
                                     </button>
                                 </li>
                             )
