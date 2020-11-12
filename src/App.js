@@ -29,16 +29,7 @@ class App extends React.Component {
         ],
         desc: 'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
         link: ''
-      },
-      {
-        name: "Music Networking",
-        imgs: [
-          './astro1.png',
-          './astro2.png'
-        ],
-        desc: 'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
-        link: ''
-      },
+      }
     ]
     
     this.audio = [

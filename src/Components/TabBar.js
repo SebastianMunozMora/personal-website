@@ -13,15 +13,6 @@ class TabBar extends React.Component {
     render() {
         return (
             <div>
-                <button class="burgerMenu" onClick={() => {
-                    this.state.burgerStatus ? this.setState({ burgerStatus: false }) : this.setState({ burgerStatus: true })
-                }
-
-                }>
-                    <div className="burger_line"></div>
-                    <div className="burger_line"></div>
-                    <div className="burger_line"></div>
-                </button>
                 <ul className="tabs-container">
                     {this.props.items.map((item) => {
                         if (this.state.burgerStatus) {
