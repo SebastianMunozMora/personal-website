@@ -27,18 +27,9 @@ class App extends React.Component {
           './astro1.png',
           './astro2.png'
         ],
-        desc: 'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
-        link: ''
-      },
-      {
-        name: "Music Networking",
-        imgs: [
-          './astro1.png',
-          './astro2.png'
-        ],
-        desc: 'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api',
-        link: ''
-      },
+        desc: 'Built using Android Studio and Java, consumes the Nasa Api and displays the picture, the date and the description. There is a date picker to view all of the picture uploaded to the api, this link leads to a Github page doing the same built with pure Javascript.',
+        link: 'https://sebastianmunozmora.github.io/Astronomy-Consumtion/'
+      }
     ]
     
     this.audio = [
@@ -89,6 +80,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
+          <AudioWave Amplitude = {1} f = {2} color="#acaaaa85" />
           <h1>Sebastián Muñoz Mora</h1>
           <TabBar items={this.items} />
           

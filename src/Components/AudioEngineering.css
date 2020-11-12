@@ -1,9 +1,9 @@
 
 
-.audio-p{
+.audio-p, .audio-link {
     font-size: large;
     display: inline-block;
-    width: 30%
+    width: 30%;
 }
 
 .slide-div{
@@ -49,4 +49,3 @@
     height: 15px !important;
 
 }
-

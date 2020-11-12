@@ -49,4 +49,4 @@ class AudioWave extends React.Component{
     }
 }
 
-export default AudioWave
+export default AudioWave;
